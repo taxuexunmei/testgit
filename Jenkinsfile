@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('first') {
       steps {
-        unstable 'test hello world'
         sleep 10
-        build(job: 'test', propagate: true, quietPeriod: 3)
       }
     }
 
