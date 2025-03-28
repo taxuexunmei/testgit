@@ -46,6 +46,12 @@ pipeline {
           }
         }
 
+        stage('three-3') {
+          steps {
+            sleep 5
+          }
+        }
+
       }
     }
 
