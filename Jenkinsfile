@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('first') {
       steps {
-        sleep 10
+        sleep 1
       }
     }
 
@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('second') {
           steps {
-            sleep 4
+            sleep 2
           }
         }
 
@@ -46,7 +46,7 @@ pipeline {
 
         stage('three-3') {
           steps {
-            sleep 5
+            sleep 1
           }
         }
 
