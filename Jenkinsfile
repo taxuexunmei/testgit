@@ -3,18 +3,12 @@ pipeline {
   stages {
     stage('first') {
       steps {
-        sleep 1
+        echo 'first'
       }
     }
 
     stage('second') {
       parallel {
-        stage('second') {
-          steps {
-            sleep 2
-          }
-        }
-
         stage('second-2') {
           steps {
             echo 'second-2'
@@ -44,9 +38,9 @@ pipeline {
           }
         }
 
-        stage('three-3') {
+        stage('') {
           steps {
-            sleep 1
+            echo 'sdfsdwe2'
           }
         }
 
@@ -65,8 +59,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    name = 'smith'
   }
 }
