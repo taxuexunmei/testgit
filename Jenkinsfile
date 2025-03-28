@@ -38,7 +38,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             echo 'sdfsdwe2'
           }
